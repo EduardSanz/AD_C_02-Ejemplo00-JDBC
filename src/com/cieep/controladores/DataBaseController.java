@@ -52,7 +52,8 @@ public class DataBaseController {
         PreparedStatement pstm = connection.prepareStatement(query);
         pstm.setInt(1, idAnimal);
         ResultSet rs = pstm.executeQuery();
-        if (rs.first()) {
+
+        if (rs.next()) {
             return new Animal(
                     rs.getInt(Constantes.ID_ANIMAL),
                     rs.getString(Constantes.TIPO),

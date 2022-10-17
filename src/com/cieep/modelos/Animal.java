@@ -81,4 +81,16 @@ public class Animal {
     public void setNumEnfermedades(int numEnfermedades) {
         this.numEnfermedades = numEnfermedades;
     }
+
+    @Override
+    public String toString() {
+        return "Animal{" +
+                "idAnimal=" + idAnimal +
+                ", tipo='" + tipo + '\'' +
+                ", nombre='" + nombre + '\'' +
+                ", color='" + color + '\'' +
+                ", edad=" + edad +
+                ", numEnfermedades=" + numEnfermedades +
+                '}';
+    }
 }

@@ -13,10 +13,10 @@ public class Main {
             DataBaseController dataBaseController = new DataBaseController();
             Animal animal = new Animal(1, "MARINO", "Nemo", "Naranja", 1, 1);
             Connection connection = dataBaseController.obtenerConexion();
-            dataBaseController.insertaAnimal(animal, connection);
-
+            // dataBaseController.insertaAnimal(animal, connection);
+            System.out.println(dataBaseController.getAnimal(1,connection));
         } catch (SQLException e) {
-            System.out.println(e.getLocalizedMessage());
+            e.printStackTrace();
         }
     }
 }

@@ -7,6 +7,6 @@ public class Constantes {
     public static final String NOMBRE = "nombre";
     public static final String COLOR = "color";
     public static final String EDAD = "edad";
-    public static final String NUM_ENFERMEDADES = "num_efermedades";
+    public static final String NUM_ENFERMEDADES = "num_enfermedades";
 
 }
