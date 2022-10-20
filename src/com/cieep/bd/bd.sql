@@ -9,3 +9,12 @@ create table if not exists animales(
     edad int NOT NULL ,
     num_enfermedades int not null
 );
+
+
+update animales set
+        tipo = ?,
+        nombre = ?,
+        color = ?,
+        edad = ?,
+        num_enfermedades = ?
+    where id_animal = ?;
